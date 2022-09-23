@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>БДСМ-Кнопочка</title>
+	<style type="text/css">
+		body {
+			width: 100vw;
+			height: 100vh;
+		}
+		button {
+			border-radius: 50%;
+			background:#ffe8db;
+			border: none;
+			width: 250px;
+			height: 250px;
+			box-shadow: 0px 15px #DCDCDC;
+		}
+		button:hover {
+			transition-duration: .3s;
+		}
+		button:active {
+			box-shadow: 0px 8px #DCDCDC;
+			transform: translateY(7px);
+		}
+		.wrapper {
+			display: flex; 
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+		}
+		.slova{
+			font-family: 'Comic Sans MS';
+			font-size: 36px;
+		}
+	</style>
+</head>
+ <body>
+ 	<div class="wrapper">
+ 	 <p class="slova">Приветик^^</p>
+ 	 <button onclick="obnovut()"></button>	
+ 	</div>
+ 	<script>
+ 		document.addEventListener("DOMContentLOADED", ()=>{
+
+ 		})
+
+ 		let vse_slova = [
+ 			"Я маленькая БДСМ-Кнопочка",
+ 			"Т-ты жамкнул м-меня?",
+ 			"М-мне приятно...",
+ 			"...",
+ 			"Отшлепаешь м-меня?",
+ 			"н-нет?",
+ 			"ну и пошел нахуй, хуила",
+ 			"...",
+ 			"...",
+ 			"Пошел блять нахуй",
+ 			"Т-ты блять...Сууууууука",
+ 			"Какой же ты нахуй тупой",
+ 			"ДА ОТЪЕБИСЬ ТЫ ОТ МЕНЯ!",
+ 			"...",
+ 			"Сдохни от спида, тварына...",
+ 			"Еще нахуй...",
+ 			"Один ебанный раз...",
+ 			"Ты нажмешь на меня...",
+ 			"Я нахуй вырежу твою семью, ублюдок блять",
+ 			"",
+ 		]
+
+ 		let index = 0
+
+		let element = document.getElementsByClassName('slova')[0]
+ 		
+ 		function obnovut() {
+ 			if (vse_slova.length == index) {
+			return
+ 			}
+ 			element.innerHTML = vse_slova[index]
+ 			
+ 			index++
+ 		}
+ 	</script>
+ </body>
+</html>
